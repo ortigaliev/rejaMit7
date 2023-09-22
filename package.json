@@ -1,0 +1,25 @@
+{
+  "name": "rejamit7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/ortigaliev/rejaMit7.git"
+  },
+  "author": "Max",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ortigaliev/rejaMit7/issues"
+  },
+  "homepage": "https://github.com/ortigaliev/rejaMit7#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1"
+  }
+}
