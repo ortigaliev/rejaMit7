@@ -36,18 +36,18 @@ app.post("/create-item", (req, res) => {
   res.json({test: "success"});
 });
 
-app.get('/', function (req, res) {
-    res.render('harid');
+app.get('/', (req, res) => {
+    res.render('portifolio');
 });
 
- //Portimizda router yasaymiz
+ /* //Portimizda router yasaymiz
 app.get("/portifolio", (req,res) => {
   res.render("portifolio", {user: user});
   });
-
+ */
 
 const server = http.createServer(app);
-let PORT = 3000;
+let PORT = 5000;
 server.listen (PORT,function () {
 console.log(`The server is running successfully on port: ${PORT}`);
 });
