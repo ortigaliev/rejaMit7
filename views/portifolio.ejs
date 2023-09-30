@@ -11,8 +11,11 @@
 <body>
   <div class="frame">
     <div class="main_frame">
+
+      <!-- LEFT FRAME -->
       <div class="left_frame frame_border">
         <br class="br_border">
+
         <!-- Left profile frame -->
         <div class="left_frame-profile">
           <img class="profile_img" src="/author/imgs/Profile.png" alt="Profile Picture" width="156px" height="135px" >
@@ -52,7 +55,7 @@
           </div>
           <div class="profile_personal-info_frame">
             <h3 class="profile_personal-info_header">Freelance:</h3>
-            <p class="profile_personal_info_text">Available</p>
+            <p id="available" class="profile_personal_info_text ">Available</p>
           </div>
           <div class="profile_personal-info_frame">
             <h3 class="profile_personal-info_header">Adress:</h3>
@@ -63,49 +66,180 @@
         <!-- Profile languages -->
         <div class="profile_languages">
           <h2 class="profile_language-title">Language</h2>
+
+          <!-- BANGLA -->
           <div class="profile_language-item">
             <h3 class="profile_language-item_header">Bangla</h3>
             <p class="profile_language-item_text">100%</p>
           </div>
+          <span class="author_percentage"></span>
 
+          <!-- ENGLISH -->
           <div class="profile_language-item">
             <h3 class="profile_language-item_header">English</h3>
             <p class="profile_language-item_text">80%</p>
           </div>
+          <span class="author_percentage"></span>
 
+          <!-- SPANISH -->
           <div class="profile_language-item">
             <h3 class="profile_language-item_header">Spanish</h3>
             <p class="profile_language-item_text">60%</p>
           </div>
+          <span class="author_percentage"></span>
+          <span class="profile_language-item_b-border"></span>
 
 
         </div>
 
-        <!-- Profile Skills -->
-        <div class="profile_l">
-          <h2 class="profile_language-title">Language</h2>
-          <div class="profile_language-item">
-            <h3 class="profile_language-item_header">Bangla</h3>
-            <p class="profile_language-item_text">100%</p>
+        <!--Skills -->
+        <div class="profile_skill">
+          <h2 class="profile_skill-title">Skill</h2>
+          <!-- HTML SKILL  -->
+          <div class="profile_skill-item">
+            <h3 class="profile_skill-item_header">Html</h3>
+            <p class="profile_skill-item_text">90%</p>
           </div>
-
-          <div class="profile_language-item">
-            <h3 class="profile_language-item_header">English</h3>
-            <p class="profile_language-item_text">80%</p>
+          <span class="author_percentage"></span>
+          <!-- CSS SKILL -->
+          <div class="profile_skill-item">
+            <h3 class="profile_skill-item_header">Css</h3>
+            <p class="profile_skill-item_text">85%</p>
           </div>
-
-          <div class="profile_language-item">
-            <h3 class="profile_language-item_header">Spanish</h3>
-            <p class="profile_language-item_text">60%</p>
+          <span class="author_percentage"></span>
+          <!-- JS SKILL -->
+          <div class="profile_skill-item">
+            <h3 class="profile_skill-item_header">Js</h3>
+            <p class="profile_skill-item_text">80%</p>
           </div>
+          <span class="author_percentage"></span>
+          <!-- PHP SKILL -->
+          <div class="profile_skill-item">
+            <h3 class="profile_skill-item_header">PHP</h3>
+            <p class="profile_skill-item_text">75%</p>
+          </div>
+          <span class="author_percentage"></span>
+          <!-- WORDPRESS SKILL -->
+          <div class="profile_skill-item">
+            <h3 class="profile_skill-item_header">Wordpress</h3>
+            <p class="profile_skill-item_text">85%</p>
+          </div>
+          <span class="author_percentage"></span>
+          <span class="profile_language-item_b-border"></span>
 
 
         </div>
+
+        <!-- EXTRA SKILLS -->
+        <div class="profile_extraskill_root">
+          <h2 class="profile_extraskill-title">Extra Skill</h2>
+          <div class="profile_extraskill_wrapper">
+
+            <div class="profile_extrSkill-box">
+              <div class="profile_extraskill-icon">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="0.5" y="0.5" width="9" height="9" stroke="#FFB400"/>
+                  <rect x="5.5" y="5.5" width="9" height="9" stroke="#FFB400"/>
+                  <rect x="0.5" y="0.5" width="9" height="9" stroke="#FFB400"/>
+                  <rect x="5.5" y="5.5" width="9" height="9" stroke="#FFB400"/>
+                </svg>
+              </div>
+              <h3 class="profile_extraskill-name">Bootstrap, Materialize</h3>
+            </div>
+
+            <div class="profile_extrSkill-box">
+              <div class="profile_extraskill-icon">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="0.5" y="0.5" width="9" height="9" stroke="#FFB400"/>
+                  <rect x="5.5" y="5.5" width="9" height="9" stroke="#FFB400"/>
+                  <rect x="0.5" y="0.5" width="9" height="9" stroke="#FFB400"/>
+                  <rect x="5.5" y="5.5" width="9" height="9" stroke="#FFB400"/>
+                </svg>
+              </div>
+              <h3 class="profile_extraskill-name">Stylus, Sass, Less</h3>
+            </div>
+
+            <div class="profile_extrSkill-box">
+              <div class="profile_extraskill-icon">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="0.5" y="0.5" width="9" height="9" stroke="#FFB400"/>
+                  <rect x="5.5" y="5.5" width="9" height="9" stroke="#FFB400"/>
+                  <rect x="0.5" y="0.5" width="9" height="9" stroke="#FFB400"/>
+                  <rect x="5.5" y="5.5" width="9" height="9" stroke="#FFB400"/>
+                </svg>
+              </div>
+              <h3 class="profile_extraskill-name">Gulp, Webpack, Grunt</h3>
+            </div>
+
+            <div class="profile_extrSkill-box">
+              <div class="profile_extraskill-icon">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="0.5" y="0.5" width="9" height="9" stroke="#FFB400"/>
+                  <rect x="5.5" y="5.5" width="9" height="9" stroke="#FFB400"/>
+                  <rect x="0.5" y="0.5" width="9" height="9" stroke="#FFB400"/>
+                  <rect x="5.5" y="5.5" width="9" height="9" stroke="#FFB400"/>
+                </svg>
+              </div>
+              <h3 class="profile_extraskill-name">GIT Knowledge</h3>
+            </div>
+          </div>
+        </div>
+
+
 
 
       </div>
-      <div class="middle_frame frame_border"></div>
+
+      <!-- MIDDLE FRAME -->
+      <div class="middle_frame frame_border">
+        <div class="middle_frame_main-wrapper">
+
+          <div class="middle_frame_top">
+
+            <div class="middle_frame_top-left_info">
+              <h2 class="middle_frame_top-left_info-header">Doctor neurologists in OHSU Hospital </h2>
+              <p class="middle_frame_top-left_info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit Et, volutpat feugiat placerat lobortis. Natoque rutrum semper sed suspendisse nunc lectus.</p>
+              <button class="middle_frame_top-left_info-btn btn">Hire me</button>
+            </div>
+
+            <img class="middle_frame_top_img" src="/author/imgs/MiddleTopImg.png" alt="Top main IMG" width="326" height="446">
+
+          </div>
+
+          <!-- MIDDLE FRAME BUTTOM -->
+          <div class="middle_frame_bottom">
+
+            <div class="middle_frame_bottom-service_info">
+              <h2 class="middle_frame_bottom-service_info-header">My services</h2>
+              <p class="middle_frame_bottom-service_info-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum</p>
+            </div>
+
+            <div class="middle_frame_bottom-service-item-wrapper">
+              <div class="service-item">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="68" height="68" fill="none"><path fill="#FFB400" d="M63.219 7.438H4.78a3.723 3.723 0 0 0-3.718 3.718v37.188a3.723 3.723 0 0 0 3.718 3.718h21.274L24.78 55.25h-5.655a1.062 1.062 0 0 0-1.063 1.063v2.124h-6.375a1.062 1.062 0 1 0 0 2.126h44.626a1.062 1.062 0 1 0 0-2.126h-6.376v-2.124a1.062 1.062 0 0 0-1.062-1.063H43.22l-1.275-3.188h21.274a3.723 3.723 0 0 0 3.718-3.718V11.156a3.723 3.723 0 0 0-3.718-3.719ZM47.812 57.374v1.063H20.189v-1.063h27.625ZM27.07 55.25l1.275-3.188h11.31l1.275 3.188H27.07Zm37.742-6.906a1.595 1.595 0 0 1-1.593 1.593H4.78a1.595 1.595 0 0 1-1.593-1.593v-2.657h61.624v2.657Zm0-4.782H3.188V11.157A1.595 1.595 0 0 1 4.78 9.562H63.22a1.595 1.595 0 0 1 1.593 1.594v32.407Z"/><path fill="#FFB400" d="M29.167 34.888a1.063 1.063 0 0 0 1.471-.305l8.368-12.75a1.063 1.063 0 0 0-1.777-1.166l-8.367 12.75a1.062 1.062 0 0 0 .305 1.471ZM40.757 34.816a1.062 1.062 0 0 0 1.497-.136l5.312-6.375a1.063 1.063 0 0 0 0-1.36l-5.312-6.375a1.062 1.062 0 1 0-1.633 1.36l4.746 5.695-4.746 5.695a1.063 1.063 0 0 0 .136 1.496ZM25.746 34.68a1.063 1.063 0 1 0 1.633-1.36l-4.746-5.695 4.746-5.695a1.062 1.062 0 1 0-1.633-1.36l-5.312 6.375a1.062 1.062 0 0 0 0 1.36l5.312 6.375Z"/></svg>
+                </span>
+                <div class="service_item_tite">web development</div>
+                <div class="service_item_bio">blog, e-commerce</div>
+              </div>
+            </div>
+
+
+
+
+
+          </div>
+
+
+
+
+        </div>
+      </div>
+
+
+      <!-- RIGHT FRAME -->
       <div class="right_frame frame_border"></div>
+
     </div>
   </div>
 </body>

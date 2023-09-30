@@ -1,4 +1,4 @@
-console.log("Jack Ma maslahatlari");
+/* console.log("Jack Ma maslahatlari");
 const list =[
   "yaxshi talaba bo'lin", //0-20
   "tugri boshliq tanlasng va ko'proq xato qiling", //20-30
@@ -32,4 +32,4 @@ maslahatBering (65, (err, data) => {
     }
 
 });
-console.log("passed here 1");
+console.log("passed here 1"); */
