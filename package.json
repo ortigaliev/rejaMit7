@@ -10,19 +10,15 @@
     "train": "nodemon train.js"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://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@github.com/ortigaliev/rejaMit7.git"
+    "type": "git"
   },
   "author": "Max",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ortigaliev/rejaMit7/issues"
-  },
-  "homepage": "https://github.com/ortigaliev/rejaMit7#readme",
   "dependencies": {
     "ejs": "^3.1.9",
     "express": "^4.18.2",
     "json": "^11.0.0",
+    "mongodb": "^3.2.6",
     "nodemon": "^3.0.1"
   }
 }

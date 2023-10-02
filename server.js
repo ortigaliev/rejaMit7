@@ -1,53 +1,25 @@
 
-console.log('Web serverni boshlash');
-const express = require("express");
-const app = express();//expressning app objectini yuboradi
 const http = require("http");
-const fs = require("fs");
+const mongodb = require('mongodb');
 
-let user;
-fs.readFile("database/user.json", "utf8", (err,data) => {
-  if (err){
-    console.log("ERROR:", err);
-  }else{
-    user = JSON.parse(data)
-  }
-});
+let db;
+const connectionString = "mongodb+srv://ortigaliyevm:NqRWKCEJPpsAjhb@ortigaliyev.yri8ho8.mongodb.net/?retryWrites=true&w=majority";
 
-
-// 1: Kirish code
-
-app.use(express.static('public'))
-app.use(express.json());
-app.use(express.urlencoded({extended: true}));
-
-// 2: Session Code
-
-
-// 3: View Code
-
-app.set("views","views");
-app.set("view engine","ejs");
-
-// 4: Routing code
-
-app.post("/create-item", (req, res) => {
-  console.log(req)
-  res.json({test: "success"});
-});
-
-app.get('/', (req, res) => {
-    res.render('portifolio');
-});
-
- /* //Portimizda router yasaymiz
-app.get("/portifolio", (req,res) => {
-  res.render("portifolio", {user: user});
+mongodb.connect(
+  connectionString,
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  },
+  (err, client) => {
+    if (err) console.log("Error on connection MongoDB");
+    else{
+      console.log("MongoDB connection succeed");
+      const app = require('/app');
+      const server = http.createServer(app);
+      let PORT = 3000;
+      server.listen (PORT,function () {
+        console.log(`The server is running successfully on port: ${PORT}, http://localhost:${PORT}`);
+      });
+    }
   });
- */
-
-const server = http.createServer(app);
-let PORT = 5000;
-server.listen (PORT,function () {
-console.log(`The server is running successfully on port: ${PORT}`);
-});

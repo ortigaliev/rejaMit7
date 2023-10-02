@@ -121,9 +121,6 @@
   margin-bottom: 9px;
 }
 
-.profile_personal-info_text {
-}
-
 
 /* Profile LAnguages */
 
@@ -278,10 +275,6 @@
   background-color: #E5E5E5;
 }
 
-.middle_frame_main-wrapper {
-
-
-}
 .middle_frame_top {
   display: flex;
   flex-direction: row;
@@ -343,10 +336,6 @@
   z-index: 1;
 }
 
-
-.middle_frame_bottom {
-
-}
 .middle_frame_bottom-service_info {
   display: flex;
   flex-direction: column;
@@ -416,12 +405,6 @@
   color: #2B2B2B;
 }
 
-.service_item_bio {
-}
-#serviceBox{
-
-
-}
 .service_item_text {
   margin: 0;
   padding: 0;
