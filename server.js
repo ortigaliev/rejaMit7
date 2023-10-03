@@ -12,7 +12,7 @@ mongodb.connect(
     useNewUrlParser: true,
     useUnifiedTopology: true,
   },
-  (err, client) => {
+    (err, client) => {
     if (err) console.log("Error on connection MongoDB");
     else{
       console.log("MongoDB connection succeed");
