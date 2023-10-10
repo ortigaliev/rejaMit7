@@ -34,9 +34,8 @@ document.getElementById("create-form").addEventListener("submit", function (e){
 });
 
 document.addEventListener("click", function (e) {
-
   //delete oper
-  console.log(e.target);
+  console.log(e);
   if(e.target.classList.contains("delete-me")) {
     if (confirm("Aniq o'chirmoqchimisiz?")) {
       axios
@@ -75,7 +74,7 @@ document.addEventListener("click", function (e) {
 
 /* DELETE ALL BUTTON */
 document.getElementById("clean-all").addEventListener("click", function() {
-  axios.post("/deleteall", {delete_all: true}).then(response => {
+  axios.post("/delete-all", {delete_all: true}).then(response => {
     alert(response.data.state);
     document.location.reload();
   });
